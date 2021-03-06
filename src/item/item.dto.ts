@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsInt, IsString } from 'class-validator';
+import { IsString } from 'class-validator';
 import { Item } from '../models/item.entity';
 import { User } from '../user.decorator';
 
