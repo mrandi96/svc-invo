@@ -1,0 +1,19 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "randi",
+  "password": "P@ssw0rd123",
+  "database": "invo",
+  "entities": [
+    "**/*.entity{.ts,.js}"
+  ],
+  "migrationsTableName": "migrations",
+  "migrations": [
+    "src/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/migrations"
+  },
+  "ssl": false
+}
