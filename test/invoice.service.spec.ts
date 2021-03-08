@@ -1,8 +1,8 @@
 // import { Test, TestingModule } from '@nestjs/testing';
-import { ItemService } from './item.service';
+import { InvoiceService } from '../src/services/invoice.service';
 
 describe('ItemService', () => {
-  let service: ItemService;
+  let service: InvoiceService;
 
   beforeEach(async () => {
     service = undefined;

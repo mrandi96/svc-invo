@@ -19,13 +19,13 @@ export abstract class BaseEntity {
   createdAt: Date;
 
   @Column({ type: 'varchar', length: 300, nullable: true })
-  createdBy: string;
+  createdBy: string | null;
 
   @UpdateDateColumn({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 
   @Column({ type: 'varchar', length: 300, nullable: true })
-  updatedBy: string;
+  updatedBy: string | null;
 
   @Column({ type: 'varchar', length: 300, nullable: true })
   internalComment: string | null;
